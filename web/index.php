@@ -1,7 +1,7 @@
 
 
 <?php
-echo "hello";
+echo "<html><body><h1>hello</h1></body?</html>";
 
 # This function reads your DATABASE_URL configuration automatically set by Heroku
 # the return value is a string that will work with pg_connect
