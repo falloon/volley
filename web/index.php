@@ -53,6 +53,9 @@ $app->get('/twig/{name}', function($name) use($app) {
     'name' => $name,
   ));
 });
+$app->get('/opps/', function() use($app) {
+  return $app['twig']->render('opportunities.html', array());
+});
 
 
 $app->run();
