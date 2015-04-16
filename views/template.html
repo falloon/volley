@@ -1,6 +1,7 @@
 <html lang='en'>
 	<head>
-		<title>Do Good Together: Home page </title>
+		{% block head %}
+		<title>{% block title %} {% endblock %} Vollie </title>
 
 		<!--Latest compiled version of Bootstrap-->
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -10,12 +11,13 @@
 
 		<!--Custom stylesheet-->
 		<link rel="stylesheet" type="text/css" href="css/main_style.css"></script>
-
+		{% endblock %}
 	</head>
 
 	<body>
 
 	    <!--Top navigation-->
+	    {% block topNav %}
 	    <nav class="navbar-fixed-top">
 	    	<div class='btn-group btn-group-justified' role='group'>
 		    		<div class='btn-group' role='group'>
@@ -38,14 +40,16 @@
 		    		
 		    </div>
 	    </nav>
-
+	    {% endblock %}
 
 	    <div id="main_container">
-	    		PAGE CONTENT GOES HERE
-
-	    </div><!--Container-->
+	    {% block content %}
+	    
+	    {% endblock %}
+	    </div>
 
 	    <!--Bottom navigation bar-->
+	    {% block bottomNav %}
 	    <footer class='footer'>
 	    <nav class="navbar navbar-default navbar-fixed-bottom" id="bottom_nav">
 	    	<div class='btn-group btn-group-justified' role='group'>
@@ -72,6 +76,7 @@
 		    </div>
 	    </nav>
 	    </footer>
+	    {% endblock %}
 	</body>
 
 </html>
