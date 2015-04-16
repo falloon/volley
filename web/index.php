@@ -70,10 +70,11 @@ $app->get('/invite/', function() use($app) {
   return $app['twig']->render('invite.html', array());
 });
 
-$app->get('/sent/', function() use($app) {
-  return $app['twig']->render('sent.html', array());
+$app->get('/sent/{name}', function($name) use($app) {
+  return $app['twig']->render('sent.html', array(
+      'name' => $name,
+    ));
 });
-
 
 $app->get('/calendar/', function() use($app) {
   return $app['twig']->render('calendar.html', array());
