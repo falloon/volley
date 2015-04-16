@@ -26,8 +26,9 @@ $app->register(new Herrera\Pdo\PdoServiceProvider(),
   )
 );
 
-// Our web handlers
-
+//////////////////////////////////////////////////////////
+// ROUTES
+//////////////////////////////////////////////////////////
 $app->get('/', function() use($app) {
   $app['monolog']->addDebug('logging output.');
   return $app['twig']->render('homepage.html', array());
@@ -87,7 +88,9 @@ $app->get('/invitations/', function() use($app) {
 $app->get('/matches/', function() use($app) {
   return $app['twig']->render('matches.html', array());
 });
-
+//////////////////////////////////////////////////////////
+// END OF ROUTES
+//////////////////////////////////////////////////////////
 
 $app->run();
 
