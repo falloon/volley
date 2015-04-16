@@ -53,8 +53,21 @@ $app->get('/twig/{name}', function($name) use($app) {
     'name' => $name,
   ));
 });
-$app->get('/opps/', function() use($app) {
+
+$app->get('/opportunities/', function() use($app) {
   return $app['twig']->render('opportunities.html', array());
+});
+
+$app->get('/connect/', function() use($app) {
+  return $app['twig']->render('connect.html', array());
+});
+
+$app->get('/profile/', function() use($app) {
+  return $app['twig']->render('profile.html', array());
+});
+
+$app->get('/matches/', function() use($app) {
+  return $app['twig']->render('matches.html', array());
 });
 
 
