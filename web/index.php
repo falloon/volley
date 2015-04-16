@@ -66,6 +66,14 @@ $app->get('/profile/', function() use($app) {
   return $app['twig']->render('profile.html', array());
 });
 
+$app->get('/invite/', function() use($app) {
+  return $app['twig']->render('invite.html', array());
+});
+
+$app->get('/invitations/', function() use($app) {
+  return $app['twig']->render('invitations.html', array());
+});
+
 $app->get('/matches/', function() use($app) {
   return $app['twig']->render('matches.html', array());
 });
