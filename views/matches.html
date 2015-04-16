@@ -4,78 +4,83 @@
 
 {% block content %}
 
-	    	<ul class="list-group">
-			    <li class="list-group-item"><br/></li>
-			    <li class="list-group-item">
-			    	<ul class="list-inline">
-			    		<li class="text-left"><img class='img-circle' id='user_picture' height='50px' src='../style/img/katie.jpg'></img><h3>  Katie, 29</h3></dt></li>
-			    		
-			    		<div class="text-right list-inline">
-			    		<li><span class="glyphicon glyphicon-comment icon-blue" aria-hidden="true" style="font-size:2em"></span> Chat </li>
-			    		<li><span class="glyphicon glyphicon-calendar icon-blue" aria-hidden="true" style="font-size:2em"></span> Invite </li>
-			    		</div>
-			    	</ul>
-			    </li>
-			    <li class="list-group-item">
-			    	<ul class="list-inline">
-			    		<li><img class='img-circle' id='user_picture' height='50px' src='../style/img/katie.jpg'></img></li>
-			    		<li><h3>Hannah, 31</h3></dt></li>
-			    		<div class="text-right list-inline">
-			    		<li><span class="glyphicon glyphicon-comment icon-blue" aria-hidden="true" style="font-size:2em"></span> Chat </li>
-			    		<li><span class="glyphicon glyphicon-calendar icon-blue" aria-hidden="true" style="font-size:2em"></span> Invite </li>
-			    		</div>
-			    	</ul>
-			    </li>
-			    <li class="list-group-item">
-			    	<ul class="list-inline">
-			    		<li><img class='img-circle' id='user_picture' height='50px' src='../style/img/katie.jpg'></img></li>
-			    		<li><h3>Julia, 35</h3></dt></li>
-			    		<div class="text-right list-inline">
-			    		<li><span class="glyphicon glyphicon-comment icon-blue" aria-hidden="true" style="font-size:2em"></span> Chat </li>
-			    		<li><span class="glyphicon glyphicon-calendar icon-blue" aria-hidden="true" style="font-size:2em"></span> Invite </li>
-			    		</div>
-			    	</ul>
-			    </li>
-			    <li class="list-group-item">
-			    	<ul class="list-inline">
-			    		<li><img class='img-circle' id='user_picture' height='50px' src='../style/img/katie.jpg'></img></li>
-			    		<li><h3>Samantha, 24</h3></dt></li>
-			    		<div class="text-right list-inline">
-			    		<li><span class="glyphicon glyphicon-comment icon-blue" aria-hidden="true" style="font-size:2em"></span> Chat </li>
-			    		<li><span class="glyphicon glyphicon-calendar icon-blue" aria-hidden="true" style="font-size:2em"></span> Invite </li>
-			    		</div>
-			    	</ul>
-			    </li>
-			    <li class="list-group-item">
-			    	<ul class="list-inline">
-			    		<li><img class='img-circle' id='user_picture' height='50px' src='../style/img/katie.jpg'></img></li>
-			    		<li><h3>Elizabeth, 26</h3></dt></li>
-			    		<div class="text-right list-inline">
-			    		<li><span class="glyphicon glyphicon-comment icon-blue" aria-hidden="true" style="font-size:2em"></span> Chat </li>
-			    		<li><span class="glyphicon glyphicon-calendar icon-blue" aria-hidden="true" style="font-size:2em"></span> Invite </li>
-			    		</div>
-			    	</ul>
-			    </li>
-			    <li class="list-group-item">
-			    	<ul class="list-inline">
-			    		<li><img class='img-circle' id='user_picture' height='50px' src='../style/img/katie.jpg'></img></li>
-			    		<li><h3>Alice, 29</h3></dt></li>
-			    		<div class="text-right list-inline">
-			    		<li><span class="glyphicon glyphicon-comment icon-blue" aria-hidden="true" style="font-size:2em"></span> Chat </li>
-			    		<li><span class="glyphicon glyphicon-calendar icon-blue" aria-hidden="true" style="font-size:2em"></span> Invite </li>
-			    		</div>
-			    	</ul>
-			    </li>
-			    <li class="list-group-item">
-			    	<ul class="list-inline">
-			    		<li><img class='img-circle' id='user_picture' height='50px' src='../style/img/katie.jpg'></img></li>
-			    		<li><h3>Sarah, 29</h3></dt></li>
-			    		<div class="text-right list-inline">
-			    		<li><span class="glyphicon glyphicon-comment icon-blue" aria-hidden="true" style="font-size:2em"></span> Chat </li>
-			    		<li><span class="glyphicon glyphicon-calendar icon-blue" aria-hidden="true" style="font-size:2em"></span> Invite </li>
-			    		</div>
-			    	</ul>
-			    </li>
-			    
-			</ul>
+	    	<h2 style='text-align:center'>Invite Friends</h2>
+	    	<div id='invitation_container' class="invitation">
+
+	    		<!--Search Bar-->
+	    		<div class="row">
+  					<div class="col-lg-6">
+  						<div class="input-group">
+					      <input type="text" class="form-control" placeholder="Search Matches...">
+					      <span class="input-group-btn">
+					        <button class="btn btn-default" type="button">Go!</button>
+					      </span>
+					    </div><!-- /input-group -->
+					 </div><!-- /.col-lg-6 -->
+				</div><!-- /.row -->
+	    		
+	    		<!--Invitation-->
+	    		<div class='media well'>
+	    			<div class='media-left' width='64px'>
+	    				<a href='profile.html'>
+	    					<img class='img-circle' height='200px' src='../style/img/katie.jpg'>
+	    				</a>
+	    			</div>
+	    			<div class='media-body'>
+		    			<h4 class='media-heading'><strong>Katie</strong></h4>
+
+		    			<a href="/sent">
+			    			<button type='button' class='btn btn-default'>
+			    				<span style='font-size:2em' class='glyphicon glyphicon-envelope'></span>
+			    				</br>Invite
+			    			</button>
+			    		</a>
+		    			
+		    			<button type='button' class='btn btn-default'>
+		    				<span style='font-size:2em' class='glyphicon glyphicon-comment'></span>
+		    				</br>Message
+		    			</button>
+		    		</div>
+		    	</div>
+
+		    	<div class='media well'>
+	    			<div class='media-left' width='64px'>
+	    				<a href='profile.html'>
+	    					<img class='img-circle' height='200px' src='../style/img/sue.jpg'>
+	    				</a>
+	    			</div>
+	    			<div class='media-body'>
+		    			<h4 class='media-heading'><strong>Sue</strong></h4>
+
+		    			<button type='button' class='btn btn-default'>
+		    				<span style='font-size:2em' class='glyphicon glyphicon-envelope'></span>
+		    				</br>Invite
+		    			</button>
+		    			<button type='button' class='btn btn-default'>
+		    				<span style='font-size:2em' class='glyphicon glyphicon-comment'></span>
+		    				</br>Message
+		    			</button>
+		    		</div>
+		    	</div>
+
+	    		<div class='media well'>
+	    			<div class='media-left' width='64px'>
+	    				<a href='profile.html'>
+	    					<img class='img-circle' height='200px' src='../style/img/joanna.jpg'>
+	    				</a>
+	    			</div>
+	    			<div class='media-body'>
+		    			<h4 class='media-heading'><strong>Joanna</strong></h4>
+
+		    			<button type='button' class='btn btn-default'>
+		    				<span style='font-size:2em' class='glyphicon glyphicon-envelope'></span>
+		    				</br>Invite
+		    			</button>
+		    			<button type='button' class='btn btn-default'>
+		    				<span style='font-size:2em' class='glyphicon glyphicon-comment'></span>
+		    				</br>Message
+		    			</button>
+		    		</div>
+		    	</div>
+	    	</div><!--Invitation container-->
 {% endblock %}
