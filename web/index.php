@@ -30,7 +30,7 @@ $app->register(new Herrera\Pdo\PdoServiceProvider(),
 
 $app->get('/', function() use($app) {
   $app['monolog']->addDebug('logging output.');
-  return 'Hello';
+  return $app['twig']->render('homepage.html', array());
 });
 
 $app->get('/db/', function() use($app) {
