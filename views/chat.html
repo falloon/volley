@@ -1,0 +1,27 @@
+{% extends "template.html" %}
+
+{%block header %}
+{{ parent() }}
+
+<script>
+	$document.ready(function () {
+		$('#send').submit(function (e) {
+			var msg = $('#text').val();
+			$('#msgbox').append('<div><b>You: </b>' + msg + '</div>');
+		});
+	});
+</script>
+
+{% endblock %}
+{%block title %}Chat{% endblock %}
+
+{% block content %}
+
+	<h3> Chat with Joanna </h3>
+	<form id="send">
+      <input class="form-control input-block" type="text" id="text" placeholder="Enter message">
+      <input class="btn btn-primary btn-block" type="submit" value="Send message">
+    </form>
+    <div id="msgbox"></div>
+
+{% endblock %}
