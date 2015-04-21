@@ -99,6 +99,7 @@ $app->get('/connect/{id}', function($id) use($app) {
       'age'    => $info[0]['age'],
       'gender' => $info[0]['gender'],
       'bio'    => $info[0]['bio'],
+      'id'     => $id,
     ));
 });
 //////////////////////////////////////////////////////////

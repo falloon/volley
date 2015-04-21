@@ -22,16 +22,20 @@
 			   		</ul>
 		   		</div>
 			    <div class='media-center'>
-			    	<span class='glyphicon glyphicon-menu-left' style='font-size:2.5em'></span>
-				    <img class='img-circle' height='200px' src='../style/img/{{name|lower}}.jpg'>	
-				    <span class='glyphicon glyphicon-menu-right' style='font-size:2.5em'></span>
+			    	
+			    	
+				    <img class='img-circle' height='400px' src='../style/img/{{name|lower}}.jpg'>	
+				
 		 	    </div>
+		 	    <a href='connect/{{id + 1}}'>
 		 	    <button id="choice-button-no">
 			    	<span class='glyphicon glyphicon-remove' style='font-size:2.5em'></span>
-			    </button>
+			    </button></a>
+			    <a href='connect/{{id + 1}}'>
 			    <button id="choice-button-yes">
 			   		<span class='glyphicon glyphicon-ok' style='font-size:2.5em'></span>
-			    <button>
+			    <button></a>
+
 	  		</div>
 
 {% endblock %}
