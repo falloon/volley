@@ -59,8 +59,8 @@ $app->get('/opportunities/', function() use($app) {
   return $app['twig']->render('opportunities.html', array());
 });
 
-$app->get('/connect/', function() use($app) {
-  return $app['twig']->render('connect.html', array());
+$app->get('/matches/', function() use($app) {
+  return $app['twig']->render('matches.html', array());
 });
 
 $app->get('/profile/', function() use($app) {
@@ -85,8 +85,21 @@ $app->get('/invitations/', function() use($app) {
   return $app['twig']->render('invitations.html', array());
 });
 
-$app->get('/matches/', function() use($app) {
-  return $app['twig']->render('matches.html', array());
+$app->get('/connect/{id}', function($id) use($app) {
+  $st = $app['pdo']->prepare('SELECT * FROM users WHERE id ='.$id);
+  $st->execute();
+
+  $info = array();
+  while ($row = $st->fetch(PDO::FETCH_ASSOC)) {
+    $app['monolog']->addDebug('Row ' . $row['name']);
+    $info[] = $row;
+  }
+  return $app['twig']->render('connect.html', array(
+      'name'   => $info["name"],
+      'age'    => $info["age"],
+      'gender' => $info["gender"],
+      'bio'    => $info["bio"],
+    ));
 });
 //////////////////////////////////////////////////////////
 // END OF ROUTES
