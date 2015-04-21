@@ -95,10 +95,10 @@ $app->get('/connect/{id}', function($id) use($app) {
     $info[] = $row;
   }
   return $app['twig']->render('connect.html', array(
-      'name'   => $info['name'],
-      'age'    => $info['age'],
-      'gender' => $info['gender'],
-      'bio'    => $info['bio'],
+      'name'   => $info[0]['name'],
+      'age'    => $info[0]['age'],
+      'gender' => $info[0]['gender'],
+      'bio'    => $info[0]['bio'],
     ));
 });
 //////////////////////////////////////////////////////////
