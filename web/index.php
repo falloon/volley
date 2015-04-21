@@ -35,7 +35,7 @@ $app->get('/', function() use($app) {
 });
 
 $app->get('/db/', function() use($app) {
-  $st = $app['pdo']->prepare('SELECT name FROM test_table');
+  $st = $app['pdo']->prepare('SELECT name FROM users');
   $st->execute();
 
   $names = array();
