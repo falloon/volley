@@ -5,9 +5,9 @@
 
 <script>
 	$document.ready(function () {
-		$('#send').submit(function (e) {
+		$('#send').submit(function () {
 			var msg = $('#text').val();
-			$('#msgbox').append('<div><b>You: </b>' + msg + '</div>');
+			$('#msgbox').append('<li><b>You: </b>' + msg + '</li>');
 		});
 	});
 </script>
@@ -22,6 +22,8 @@
       <input class="form-control input-block" type="text" id="text" placeholder="Enter message">
       <input class="btn btn-primary btn-block" type="submit" value="Send message">
     </form>
-    <div id="msgbox"></div>
+    <br/>
+    hello
+    <ul id="msgbox"></ul>
 
 {% endblock %}
