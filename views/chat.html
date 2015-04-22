@@ -6,6 +6,7 @@
 <script>
 	$document.ready(function () {
 		$('#send').submit(function () {
+			alert("Hello!");
 			var msg = $('#text').val();
 			$('#msgbox').append('<li><b>You: </b>' + msg + '</li>');
 		});
