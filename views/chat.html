@@ -4,13 +4,12 @@
 {{ parent() }}
 
 <script>
-	$document.ready(function () {
-		$('#send').submit(function () {
-			alert("Hello!");
-			var msg = $('#text').val();
-			$('#msgbox').append('<li><b>You: </b>' + msg + '</li>');
-		});
-	});
+	function sendMsg () {
+		alert("Hello!");
+		var msg = $('#text').val();
+		$('#msgbox').append('<li><b>You: </b>' + msg + '</li>');
+	}
+
 </script>
 
 {% endblock %}
@@ -21,7 +20,7 @@
 	<h3> Chat with Joanna </h3>
 	<form id="send">
       <input class="form-control input-block" type="text" id="text" placeholder="Enter message">
-      <input class="btn btn-primary btn-block" type="submit" value="Send message">
+      <input class="btn btn-primary btn-block" type="submit" onClick="sendMsg()" value="Send message">
     </form>
     <br/>
     hello
