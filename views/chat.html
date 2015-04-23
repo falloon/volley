@@ -1,18 +1,5 @@
 {% extends "template.html" %}
 
-{%block header %}
-{{ parent() }}
-
-<script>
-	function sendMsg () {
-		alert("Hello!");
-		var msg = $('#text').val();
-		$('#msgbox').append('<li><b>You: </b>' + msg + '</li>');
-	}
-
-</script>
-
-{% endblock %}
 {%block title %}Chat{% endblock %}
 
 {% block content %}
