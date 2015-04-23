@@ -63,9 +63,3 @@ html, body {
 	display: inline-block;
     vertical-align: middle;
     float: none;
-
-#overlap {
-	background-image: "../img/calendar.jpg"
-	width: 300px;
-	height: 100px;
-}
