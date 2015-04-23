@@ -4,38 +4,6 @@
 
 {% block content %}
 
-	    	<div class='media' style='margin-bottom:1%'>
-	    		<div class='media-body'>
-	    			<h1>{{name}}</h1><h4>{{gender}}, {{age}}</h4>
-	    		</div>
-	    	</div>
-	    	<div class='panel panel-default'>
-		   		<div class='panel-body' style='text-align:center'>
-			   		<ul class='list-group' style='width:48%; float:right; margin-right:2%'>
-			   			<li class='list-group-item'><span class='glyphicon glyphicon-education' style='font-size:2.5em'></span>  Education</li>
-			   			<li class='list-group-item'><span class='glyphicon glyphicon-tree-deciduous' style='font-size:2.5em'></span>  Soup kitchens</li>
-			   		</ul>
-
-			   		<ul class='list-group' style='width:48%; float:left;'>
-			   			<li class='list-group-item'><span class='glyphicon glyphicon-road' style='font-size:2.5em'></span>  Service work</li>	
-			   			<li class='list-group-item'><span class='glyphicon glyphicon-grain' style='font-size:2.5em'></span> Food banks</li>
-			   		</ul>
-		   		</div>
-			    <div class='media-center'>
-			    	
-			    	
-				    <img class='img-circle' height='400px' src='../style/img/{{name|lower}}.jpg'>	
-				
-		 	    </div>
-		 	    <a href='{{id + 1}}'>
-		 	    <button id="choice-button-no">
-			    	<span class='glyphicon glyphicon-remove' style='font-size:2.5em'></span>
-			    </button></a>
-			    <a href='{{id + 1}}'>
-			    <button id="choice-button-yes">
-			   		<span class='glyphicon glyphicon-ok' style='font-size:2.5em'></span>
-			    <button></a>
-
-	  		</div>
+	    	
 
 {% endblock %}
