@@ -49,3 +49,45 @@ body {
 .icon-blue {
   color: #598CBA;
 }
+
+#main_container {
+  overflow:auto;
+  padding-bottom: 180px;
+  padding-top: 10%;
+  padding-left: 5%;
+  padding-right: 2%;
+  text-align: center;
+}
+
+#top_nav {
+  background-color: #01182D;
+  color: white;
+}
+
+#bottom_nav>button {
+  background-color: yellow;
+}
+
+#user_picture:hover {
+    -webkit-filter: brightness(50%);
+}
+
+#choice-button-no {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    color: #FF0000;
+}
+
+#choice-button-yes{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    color: #33CC33;
+
+.css-center {
+  display: inline-block;
+    vertical-align: middle;
+    float: none;
