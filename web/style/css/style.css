@@ -15,7 +15,6 @@ footer {
     bottom: 0;
     height: 100px;
     width: 100%;
-    background-color: #f5f5f5;
 
 }
 
@@ -36,7 +35,12 @@ html {
   }
 
   footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
     height: 100px;
+    background-color: #f5f5f5;
+
   }
 
   .btn-xlg:hover {
@@ -56,7 +60,12 @@ html {
   }
 
   footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
     height: 100px;
+    background-color: #f5f5f5;
+
   }
 
   .btn-xlg:hover {
