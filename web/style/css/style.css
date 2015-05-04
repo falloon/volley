@@ -25,19 +25,20 @@ html {
   min-height: 100%;
 }
 
+@media(min-width:768px){
 
-.btn-xlg {
-  height: 90px;
-  font-size: 2em;
-  width: 25%;
-  border: none;
-  background-color: #f5f5f5;
+  .btn-xlg {
+    height: 90px;
+    font-size: 2em;
+    width: 25%;
+    border: none;
+    background-color: #f5f5f5;
+  }
+
 }
-
 .btn-xlg:hover {
   background-color: #ffffff;
 }
-
 
 .header {
   position: absolute;
