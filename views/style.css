@@ -1,70 +1,52 @@
 /* Sticky footer styles
 -------------------------------------------------- */
-
-html {
-    position: relative;
-    min-height: 100%;
-}
-body {
-    margin: 0 0 100px; /* bottom = footer height */
-}
-
-footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-    background-color: #f5f5f5;
-
-}
-
-
 html {
   position: relative;
   min-height: 100%;
 }
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 100px;
+}
 
 @media(max-width:768px){
 
-  .btn-xlg {
-    height: 100%;
-    font-size: 1.2em;
-    width: 24%;
-    border: none;
-    background-color: #f5f5f5;
-  }
+.btn-xlg {
+  height: 90px;
+  font-size: 1.2em;
+  width: 25%;
+  border: none;
+  background-color: #f5f5f5;
+}
 
-  footer {
-    height: 100px;
-  }
-
-  .btn-xlg:hover {
+.btn-xlg:hover {
   background-color: #ffffff;
 }
 
 }
 
 @media(min-width: 769px){
+.btn-xlg {
+  height: 90px;
+  font-size: 2em;
+  width: 25%;
+  border: none;
+  background-color: #f5f5f5;
+}
 
-  .btn-xlg {
-    height: 100%;
-    font-size: 2em;
-    width: 24%;
-    border: none;
-    background-color: #f5f5f5;
-  }
-
-  footer {
-    height: 100px;
-  }
-
-  .btn-xlg:hover {
+.btn-xlg:hover {
   background-color: #ffffff;
 }
-
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 80px;
+  background-color: #f5f5f5;
+}
 
 .header {
   position: absolute;
