@@ -28,7 +28,7 @@ html {
 @media(min-width:768px){
 
   .btn-xlg {
-    height: 90px;
+    height: 100%;
     font-size: 2em;
     width: 25%;
     border: none;
