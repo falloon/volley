@@ -9,8 +9,7 @@
 		$('#send').submit(function(e) {
     		e.preventDefault();
     		var msg = $('#text').val();
-    		$('#msgbox').append("<div>" + msg + "</li>");
-    		alert("worked");
+    		$('#msgbox').append("<div><b>You:</b> " + msg + "</li>");
     	});
 	});
 </script>
