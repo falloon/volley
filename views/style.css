@@ -23,6 +23,10 @@ body {
   background-color: #ffffff;
 }
 
+.container {
+  width: 90%;
+}
+
 }
 
 @media(min-width: 769px){
