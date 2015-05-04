@@ -35,6 +35,10 @@ html {
     background-color: #f5f5f5;
   }
 
+  footer {
+    height: 200px;
+  }
+
 }
 .btn-xlg:hover {
   background-color: #ffffff;
