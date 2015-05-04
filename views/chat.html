@@ -2,15 +2,27 @@
 
 {%block title %}Chat{% endblock %}
 
+{% block head %}
+{{ parent() }}
+<script>
+	$(document).ready(function() {
+		$('#send').submit(function(e) {
+    		e.preventDefault();
+    		var msg = $('#text').val();
+    		$('#msgbox').append("<li>" + msg + "</li>");
+    	}
+	}
+</script>
+{% endblock %}
+
 {% block content %}
 
 	<h3> Chat with Joanna </h3>
 	<form id="send">
       <input class="form-control input-block" type="text" id="text" placeholder="Enter message">
-      <input class="btn btn-primary btn-block" type="submit" onClick="sendMsg()" value="Send message">
+      <input class="btn btn-primary btn-block" type="submit" value="Send message">
     </form>
     <br/>
-    hello
     <ul id="msgbox"></ul>
 
 {% endblock %}
