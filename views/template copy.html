@@ -29,14 +29,12 @@
 
   <body>
   	{% block topNav %}
-        <nav></nav>
-
-    <!--<div class="header">
+    <div class="header">
         <div class='btn-group btn-group-justified' role='group' style='font-size: 1.2em'>
               <span class="glyphicon glyphicon-user"></span> My profile
             </button>
         </div>
-    </div>-->
+    </div>
     {% endblock %}
 
     <!-- Begin page content -->
@@ -46,8 +44,8 @@
     </div>
 
     {% block bottomNav %}
-       <!--class="navbar navbar-default navbar-fixed-bottom" id="bottom_nav">-->
-    <footer>
+    <footer class="footer">
+      <nav class="navbar navbar-default navbar-fixed-bottom" id="bottom_nav">
         <div class='btn-group btn-group-justified' role='group'>
  
               <button type="button" class="btn-xlg">
@@ -63,8 +61,8 @@
                 <span class="glyphicon glyphicon-envelope icon-blue" aria-hidden="true" style="font-size:1.5em"></span><p style='font-size:0.5em'>Message</p></button>
 
           </div>
+      </nav>
     </footer>
     {% endblock %}
   </body>
 </html>
-
