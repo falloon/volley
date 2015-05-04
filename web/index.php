@@ -85,7 +85,7 @@ $app->get('/invitations/', function() use($app) {
   return $app['twig']->render('invitations.html', array());
 });
 
-$app->get('/chat/{name}', function() use($app) {
+$app->get('/chat/{name}', function($name) use($app) {
   return $app['twig']->render('chat.html', array(
       'name' => $name,
     ));
