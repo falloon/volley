@@ -1,0 +1,75 @@
+{% extends "template.html" %}
+
+{%block title %}Profile{% endblock %}
+
+{% block content %}
+
+		<div class='media' style='margin-bottom:1%'>
+			<div class='media-left'>
+				<img class='img-circle' id='user_picture' height='150px' src='../style/img/catherine.jpg'>
+				</img>	
+			</div>
+			<div class='media-body'>
+				<h1>Catherine</h1>
+				<h4>Female, 28</h4>
+			</div>
+		</div>
+
+	   <div class='well'>
+	   		<!--Interests-->
+	   		<div class='panel panel-default'>
+	   			<div class='panel-heading' style='text-align:left;'>
+	   			<b>Interests</b>  
+	   			</div>
+	   		<div class='panel-body' style='text-align:center'>
+	   		<ul class='list-group' style='width:48%; float:right; margin-right:2%'>
+	   			<li class='list-group-item'><span class='glyphicon glyphicon-education' style='font-size:2.5em'></span>  Education</li>
+	   			<li class='list-group-item'><span class='glyphicon glyphicon-tree-deciduous' style='font-size:2.5em'></span>  Soup kitchens</li>
+	   		</ul>
+
+	   		<ul class='list-group' style='width:48%; float:left;'>
+	   			<li class='list-group-item'><span class='glyphicon glyphicon-road' style='font-size:2.5em'></span>  Service work</li>	
+	   			<li class='list-group-item'><span class='glyphicon glyphicon-grain' style='font-size:2.5em'></span> Food banks</li>
+	   		</ul>
+
+
+	   		</div>
+
+	   </div>
+
+	   <!--Biography-->
+	   <div class='panel panel-default' style='height:250px;'>
+			<div class='panel-heading' style='text-align:left'>
+			<b>Your biography</b>  <a href='#'>edit</a>
+
+			</div>
+		   <div class='panel-body' style='text-align:left'>
+		   <p>I am a 24 year old social worker in Cambridge, Massachussetts. I love volunteering with
+		   children and at soup kitchens!</p>
+		   </div>
+		</div>
+
+		<!--Preferences-->
+		<div class='panel panel-default'>
+			<div class='panel-heading' style='text-align:left'>
+				<b>Preferences</b>
+			</div>
+			<div class='panel-body' style='text-align:left'>
+				<div class='dropdown'>
+					  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true" style='width:100%' >
+					    Gender
+					    <span class="caret"></span>
+					  	</button>
+					  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true" style='width:100%'>
+					    Age
+					    <span class="caret"></span>
+					  	</button>
+					  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true" style='width:100%'>
+					    Radius
+					    <span class="caret"></span>
+					  	</button>
+			</div>
+		</div>
+{% endblock %}
+
+	    
