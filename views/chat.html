@@ -17,7 +17,11 @@
 
 {% block content %}
 
-	<h3> Chat with Joanna </h3>
+	<div class="chatheader">
+		<img src='../style/img/{{name|lower}}.jpg'> 
+		<h1> {{name}} </h1>
+	</div>
+
 	<form id="send">
       <input class="form-control input-block" type="text" id="text" placeholder="Enter message">
       <input class="btn btn-primary btn-block" type="submit" value="Send message">
