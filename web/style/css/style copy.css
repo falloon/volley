@@ -1,30 +1,13 @@
 /* Sticky footer styles
 -------------------------------------------------- */
-
-html {
-    position: relative;
-    min-height: 100%;
-}
-body {
-    margin: 0 0 100px; /* bottom = footer height */
-}
-
-footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-    background-color: #f5f5f5;
-
-}
-
-
 html {
   position: relative;
   min-height: 100%;
 }
-
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 100px;
+}
 
 .btn-xlg {
   height: 90px;
@@ -38,6 +21,14 @@ html {
   background-color: #ffffff;
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 80px;
+  background-color: #f5f5f5;
+}
 
 .header {
   position: absolute;
