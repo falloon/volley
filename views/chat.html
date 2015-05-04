@@ -9,9 +9,9 @@
 		$('#send').submit(function(e) {
     		e.preventDefault();
     		var msg = $('#text').val();
-    		$('#msgbox').append("<li>" + msg + "</li>");
-    	}
-	}
+    		$('#msgbox').append("<div>" + msg + "</li>");
+    	};
+	};
 </script>
 {% endblock %}
 
