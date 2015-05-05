@@ -6,7 +6,7 @@ html {
     min-height: 100%;
 }
 body {
-    margin: 0 0 100px; /* bottom = footer height */
+    margin: 0 0 80px; /* bottom = footer height */
 }
 
 footer {
@@ -22,6 +22,10 @@ footer {
 html {
   position: relative;
   min-height: 100%;
+}
+
+.container {
+  background-color: #dcdbd9;
 }
 
 @media(max-width:768px){
