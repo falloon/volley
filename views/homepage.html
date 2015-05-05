@@ -2,11 +2,27 @@
 
 {%block title %}Welcome!{% endblock %}
 
+	<style>
+		.container {
+			background-color: #5fcbce;
+		}
+
+		h1, h2 {
+			text-align: center;
+			font-family: 'PT Serif', serif;
+		}
+
+		h1 { color: black;}
+		h2 { color: white;}
+	</style>
+
 {% block content %}
 	    	
-	    	<p align='center'>
-	    	<img src='../style/img/do-good-together.png' height='200px'>
+	    	<div align='center'>
 	    	<h1>Do Good Together</h1>
-	    	</p>
+	    	<h2>Get Social, Get Serving</h2>
+
+	    	<img src='../style/img/do-good-together.png' height='200px' class='slideUp'>
+	    	</div>
 
 {% endblock %}
