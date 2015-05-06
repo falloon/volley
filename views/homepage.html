@@ -14,8 +14,20 @@
 			text-transform: uppercase;
 		}
 
-		h2 { color: black;}
+		h2 { color: black; font-size: 24px; font-style: bold;}
 		h4 { color: #434343;}
+
+		h2:after {
+		    content:' ';
+		    display:block;
+		    border:2px solid #d0d0d0;
+		    border-radius:4px;
+		    -webkit-border-radius:4px;
+		    -moz-border-radius:4px;
+		    box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+		    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+		    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+		}
 
 		p {
 			font-family: 'Open Sans', sans-serif;
@@ -30,7 +42,7 @@
 
 
 	    	<div class='container'>
-		    		<h2>Do Good Together</h2>
+		    		<h2><b>Do Good Together</b></h2>
 		    		<h4>Get Social, Get Serving</h4>
 	    			<img src='../style/img/do-good-together.png' height='250px' class='slideUp'>
 
