@@ -26,68 +26,17 @@
 			background-color: #e8e7e8;
 		}
 		
-		#gallery .item img {
-
-		}
-		
 	</style>
 
 
 	    	<div class='container'>
-		    	<div data-role='page' id='page1'>
 		    		<h2>Do Good Together</h2>
 		    		<h4>Get Social, Get Serving</h4>
 	    			<img src='../style/img/do-good-together.png' height='200px' class='slideUp'>
-				</div>
-			
-				<div data-role='page' id='page2'>
+
 	    	         <p>Do Good Together is an application that lets you meet other <b>service oriented</b> individuals in your area. Browse individuals by service interest and make your first date a <b>service to your community!</b></p>
-				</div>
-	    	
-				<div data-role='page' id='page3'>
+
 	    	          <p>To get started, <b>browse</b> volunteering opportunities in the area, <b>connect</b> with new faces, see who is a <b>match</b> or <b>invite</b> your friends to go volunteer with you.</p>
-	    		</div>
 	    	</div>
-
-<script type='text/javascript'>
-    $( document ).on( "pageinit", "[data-role='page'].demo-page", function() {
-      var page = "#" + $( this ).attr( "id" ),
-        // Get the filename of the next page that we stored in the data-next attribute
-        next = $( this ).jqmData( "next" ),
-        // Get the filename of the previous page that we stored in the data-prev attribute
-        prev = $( this ).jqmData( "prev" );
-      
-      // Check if we did set the data-next attribute
-      if ( next ) {
-        // Prefetch the next page
-        $.mobile.loadPage( next + ".html" );
-        // Navigate to next page on swipe left
-        $( document ).on( "swipeleft", page, function() {
-          $.mobile.changePage( next + ".html" );
-        });
-        // Navigate to next page when the "next" button is clicked
-        $( ".control .next", page ).on( "click", function() {
-          $.mobile.changePage( next + ".html" );
-        });
-      }
-      // Disable the "next" button if there is no next page
-      else {
-        $( ".control .next", page ).addClass( "ui-disabled" );
-      }
-      // The same for the previous page (we set data-dom-cache="true" so there is no need to prefetch)
-      if ( prev ) {
-        $( document ).on( "swiperight", page, function() {
-          $.mobile.changePage( prev + ".html", { reverse: true } );
-        });
-        $( ".control .prev", page ).on( "click", function() {
-          $.mobile.changePage( prev + ".html", { reverse: true } );
-        });
-      }
-      else {
-        $( ".control .prev", page ).addClass( "ui-disabled" );
-      }
-    });
-
-</script>
 
 {% endblock %}
