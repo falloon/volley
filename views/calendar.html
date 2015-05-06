@@ -11,8 +11,9 @@
 	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
+			$("#calendarwidget").datepicker();
 			$("#calendar").click(function(){
-				$(this).datepicker();
+				$("#calendarwidget").show().focus().hide();
 			});
 		});
 	</script>
@@ -28,6 +29,8 @@
 		<input type="date" min="2015-02-01" max="2016-01-01" style="background-image: url(../style/img/calendarpage.png); width: 60%; height: 35%; padding: 0; margin: 0; background-size: contain; border: none; background-repeat: no-repeat;  font-family: 'Courier New'; font-size: 50px; text-aligh: center; vertical-align: text-top;">
 	</div> -->
 
+
+	<input type="hidden" id="calendarwidget">
 	<img src="../style/img/calendarpage.png" id="calendar">
 
 	<div class="form-group">
