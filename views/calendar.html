@@ -8,21 +8,17 @@
 	<style>
 
 	</style>
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<script src="../style/js/modernizr.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			// if (!Modernizr.inputtypes.date) {
-			//     $('input[type=date]').datepicker({
-			//         // Consistent format with the HTML5 picker
-			//         dateFormat: 'yy-mm-dd'
-			//     });
-			// }
-
 			$("#calendarwidget").datepicker();
+			if (!Modernizr.inputtypes.date) {
+			    $('input[type=date]').datepicker({
+			        // Consistent format with the HTML5 picker
+			        dateFormat: 'yy-mm-dd'
+			    });
+			}
 			$("#calendar").click(function(){
 				$("#calendarwidget").show().focus().hide();
 			});
