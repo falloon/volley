@@ -89,12 +89,16 @@ $app->get('/catherine/', function() use($app) {
   return $app['twig']->render('catherine.html', array());
 });
 
-$app->get('/organizations/', function() use($app) {
-  return $app['twig']->render('organizations.html', array());
+$app->get('/organizations/{name}', function($name) use($app) {
+  return $app['twig']->render('organizations.html', array(
+      'name' => $name,
+    ));
 });
 
-$app->get('/times/', function() use($app) {
-  return $app['twig']->render('times.html', array());
+$app->get('/times/{name}', function($name) use($app) {
+  return $app['twig']->render('times.html', array(
+      'name' => $name,
+    ));
 });
 
 $app->get('/chat/{name}', function($name) use($app) {
