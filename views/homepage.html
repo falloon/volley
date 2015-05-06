@@ -25,19 +25,10 @@
 		.container {
 			background-color: #e8e7e8;
 		}
+		
+		#gallery .item img {
 
-		#demo {
-		      width: 500px;
-		      height: 500px;
-		      visibility: hidden;
-		      margin: 100px auto;
-		      background: #457;
-		      cursor: hand;
-		      cursor: -moz-grab;
-		      cursor: -webkit-grab;
-		      cursor: grab;
-   		 }
-
+		}
 		
 	</style>
 
@@ -63,18 +54,5 @@
 	    		</li>
 	    	</ul>
 	    	</div>
-
-    <script type="text/javascript" src="../style/js/dragend.js"></script> 
-
-	<script>
-
-    document.addEventListener("DOMContentLoaded", function() {
-      var container = document.getElementById("demo");
-      dragend = new Dragend(container, {
-        afterInitialize: function() {
-          container.style.visibility = "visible";
-        }
-      });
-    }, false)
 
 {% endblock %}
