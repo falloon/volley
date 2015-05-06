@@ -33,21 +33,21 @@
 
 		.time {
 			-webkit-appearance:none;
-			padding-left: 25px;
+			padding-left: 27px;
 			width: 200px;
 			height: 100px;
 			font-size: 25px;
 			outline: none;
-			background-color: rgba(0,0,255,0.3);
+			background-color: transparent;
 			text-shadow: 0 0 3px #ffe700;
 		}
 	</style>
 
+	<center>
+
 	<h2 style='text-align:center'>Calendar</h2>
 	<h4 style='text-alight:center'>Pick a date to volunteer or to invite a friend to an opportunity!</h4>
 	<br>
-
-	<center>
 
 	<div id="calendar">
 		<input type="date" id="calendarwidget">
@@ -67,6 +67,10 @@
 		<input type="time" class="time">
 	</div>
 
+	<a href="/sent">
+	<button id="submitcalendar">Submit</button>
+	</a>
+	
 	</center>
 
 {% endblock %}
