@@ -4,14 +4,15 @@
 
 {% block content %}
 
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 	<style>
 
 	</style>
-	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src="../style/js/modernizr.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$("#calendarwidget").datepicker();
+			//$("#calendarwidget").datepicker();
 			$("#calendar").click(function(){
 				$("#calendarwidget").show().focus().hide();
 			});
