@@ -1,0 +1,40 @@
+{% extends "template.html" %}
+
+{%block title %}Profile{% endblock %}
+
+{% block content %}
+
+    <div class="radio">
+      <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+        Monday, 9/17/15, 10-11:30AM
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+        Tuesday, 9/18/15, 12-1:30PM
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+        Tuesday, 9/18/15, 5-6:00PM
+      </label>
+    </div>
+
+    <br/><br/>
+
+    <center>
+    <a href="/sent/Katie">
+      <button type='button' class='btn btn-default btn-noborder'>
+        <span style='font-size:2em' class='glyphicon glyphicon-envelope'></span>
+        </br>Invite
+      </button>
+    </a>
+    </center>
+    
+{% endblock %}
+
+      
+
