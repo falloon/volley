@@ -3,27 +3,16 @@
 {%block title %}Calendar{% endblock %}
 
 {% block content %}
-	<style>
-		#calendar {
-			background-image: url(../style/img/calendarpage.png);
-			background-repeat: no-repeat;
-			background-size: contain;
-			width: 400px;
-			height: 300px;
-		}
 
-		input[type=date]::-webkit-inner-spin-button, 
-    	input[type=date]::-webkit-outer-spin-button { 
-    		-webkit-appearance: none; 
-     		margin: 0; 
-     		outline: none;
-		}
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<style>
+
 	</style>
 	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$("#calendar").click(function(){
-
+				$(this).datepicker();
 			});
 		});
 	</script>
@@ -39,7 +28,7 @@
 		<input type="date" min="2015-02-01" max="2016-01-01" style="background-image: url(../style/img/calendarpage.png); width: 60%; height: 35%; padding: 0; margin: 0; background-size: contain; border: none; background-repeat: no-repeat;  font-family: 'Courier New'; font-size: 50px; text-aligh: center; vertical-align: text-top;">
 	</div> -->
 
-	<input type="date" id="calendar">
+	<img src="../style/img/calendarpage.png" id="calendar">
 
 	<div class="form-group">
 		<label for="usr">Enter the start time:</label>
