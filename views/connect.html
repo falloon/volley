@@ -30,6 +30,17 @@
 		    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
 		}
 
+		.interest-text {
+			font-family: 'Open Sans', sans-serif;
+			text-transform: uppercase; 
+			font-size: 9px;
+		}
+
+		.list-group li {
+			display: inline;
+			list-style-type: none;
+			padding-right: 20px;
+		}
 
 	</style>
 			<center>
@@ -41,14 +52,13 @@
 	    	</div>
 	    	<div class='panel panel-default'>
 		   		<div class='panel-body' style='text-align:center'>
-			   		<ul class='list-group' style='width:48%; float:right; margin-right:2%'>
-			   			<li class='list-group-item' id='education'><small><span class='glyphicon glyphicon-education' style='font-size:2.5em'></span></small> <div id='education-text' style='display:none'>Education</div></li>
-			   			<li class='list-group-item'><small><span class='glyphicon glyphicon-tree-deciduous' style='font-size:2.5em'></span>  </small>Environment</li>
-			   		</ul>
+			   		<ul class='list-group' style='width:80%; float:left; margin-right:2%'>
+			   			<li class='list-group-item' id='education'><small><span class='glyphicon glyphicon-education' style='font-size:2.5em'></span></small> <div id='education-text' class='interest-text' style='display:none'>Education</div></li>
+			   			<li class='list-group-item' id='environment'><small><span class='glyphicon glyphicon-tree-deciduous' style='font-size:2.5em'></span>  </small><div id='environment-text' class='interest-text' style='display:none'>Environment</div></li>
 
-			   		<ul class='list-group' style='width:48%; float:left;'>
-			   			<li class='list-group-item' id='service'><small><span class='glyphicon glyphicon-road' style='font-size:2.5em'></span></small>Service work</li>	
-			   			<li class='list-group-item'><small><span class='glyphicon glyphicon-grain' style='font-size:2.5em'></span></small> Food banks</li>
+			   			<li class='list-group-item' id='service'><small><span class='glyphicon glyphicon-road' style='font-size:2.5em'></span></small><div id='service-text' class='interest-text' style='display:none'>Service work</div></li>	
+			   			
+			   			<li class='list-group-item' id='food'><small><span class='glyphicon glyphicon-grain' style='font-size:2.5em'></span></small><div id='food-text' class='interest-text' style='display:none'>Food banks</div></li>
 			   		</ul>
 		   		</div>
 			    <div class='media-center'>
@@ -74,6 +84,18 @@
 	  <script>
 		$( "#education" ).click(function() {
 		  $( "#education-text" ).toggle();
+		});
+
+		$( "#environment" ).click(function() {
+		  $( "#environment-text" ).toggle();
+		});
+
+		$( "#service" ).click(function() {
+		  $( "#service-text" ).toggle();
+		});
+
+		$( "#food" ).click(function() {
+		  $( "#food-text" ).toggle();
 		});
 		</script>
 {% endblock %}
