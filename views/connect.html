@@ -42,12 +42,12 @@
 	    	<div class='panel panel-default'>
 		   		<div class='panel-body' style='text-align:center'>
 			   		<ul class='list-group' style='width:48%; float:right; margin-right:2%'>
-			   			<li class='list-group-item'><small><span class='glyphicon glyphicon-education' style='font-size:2.5em'></span></small>  Education</li>
+			   			<li class='list-group-item' id='education'><small><span class='glyphicon glyphicon-education' style='font-size:2.5em'></span></small> <div id='education-text' style='display:none'>Education</div></li>
 			   			<li class='list-group-item'><small><span class='glyphicon glyphicon-tree-deciduous' style='font-size:2.5em'></span>  </small>Environment</li>
 			   		</ul>
 
 			   		<ul class='list-group' style='width:48%; float:left;'>
-			   			<li class='list-group-item'><small><span class='glyphicon glyphicon-road' style='font-size:2.5em'></span></small>  Service work</li>	
+			   			<li class='list-group-item' id='service'><small><span class='glyphicon glyphicon-road' style='font-size:2.5em'></span></small>Service work</li>	
 			   			<li class='list-group-item'><small><span class='glyphicon glyphicon-grain' style='font-size:2.5em'></span></small> Food banks</li>
 			   		</ul>
 		   		</div>
@@ -70,4 +70,10 @@
 
 	  		</div>
 	  		</center>
+
+	  <script>
+		$( "#education" ).click(function() {
+		  $( "#education-text" ).toggle();
+		});
+		</script>
 {% endblock %}
