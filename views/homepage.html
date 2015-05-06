@@ -23,36 +23,58 @@
 		}
 
 		.container {
-			background-image: url('http://www.pixeden.com/media/k2/galleries/275/003-blurred-background-texture-vol2.jpg');
+			background-color: #e8e7e8;
 		}
-		
-		#gallery .item img {
 
-		}
+		#demo {
+		      width: 500px;
+		      height: 500px;
+		      visibility: hidden;
+		      margin: 100px auto;
+		      background: #457;
+		      cursor: hand;
+		      cursor: -moz-grab;
+		      cursor: -webkit-grab;
+		      cursor: grab;
+   		 }
+
 		
 	</style>
 
-	<script type='text/javascript'>
-		window.mySwipe = Swipe(document.getElementById('slider'));
-	</script>
 
-	    	<div id='slider' class='swipe'>
-	    	<div class='swipe-wrap'>
-		    	<div>
+	    	<div id='demo' class='swipe'>
+	    	<ul>
+		    	<li class='first dragend-page'>
 		    		<h2>Do Good Together</h2>
 		    		<h4>Get Social, Get Serving</h4>
 	    			<img src='../style/img/do-good-together.png' height='200px' class='slideUp'>
-				</div>
+				</li>
 			
-				<div>
-	    	         <p>Do Good Together is an application that lets you meet other <b>service oriented</b> individuals in your area. Browse individuals by service interest and make your first date a <b>service to your community!</b></p>
-				</div>
-	    	
-				<div>
-	    	          <p>To get started, <b>browse</b> volunteering opportunities in the area, <b>connect</b> with new faces, see who is a <b>match</b> or <b>invite</b> your friends to go volunteer with you.</p>
-	    		</div>
+				<li class='dragend-page'></li>
 
+				<li clas='middle dragend-page'>
+	    	         <p>Do Good Together is an application that lets you meet other <b>service oriented</b> individuals in your area. Browse individuals by service interest and make your first date a <b>service to your community!</b></p>
+				</li>
+	    	
+				<li class='dragend-page'></li>
+
+				<li class='last dragend-page'>
+	    	          <p>To get started, <b>browse</b> volunteering opportunities in the area, <b>connect</b> with new faces, see who is a <b>match</b> or <b>invite</b> your friends to go volunteer with you.</p>
+	    		</li>
+	    	</ul>
 	    	</div>
-	    	</div>
+
+    <script type="text/javascript" src="../style/js/dragend.js"></script> 
+
+	<script>
+
+    document.addEventListener("DOMContentLoaded", function() {
+      var container = document.getElementById("demo");
+      dragend = new Dragend(container, {
+        afterInitialize: function() {
+          container.style.visibility = "visible";
+        }
+      });
+    }, false)
 
 {% endblock %}
