@@ -93,13 +93,13 @@ $app->get('/organizations/{name}', function($name) use($app) {
   return $app['twig']->render('organizations.html', array(
       'name' => $name,
     ));
-
+});
 
 $app->get('/submitted/{org}', function($org) use($app) {
   return $app['twig']->render('organizations.html', array(
       'org' => $org,
     ));
-
+});
 
 $app->get('/times2/{org}', function($org) use($app) {
   return $app['twig']->render('times2.html', array(
