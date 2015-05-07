@@ -1,0 +1,35 @@
+{% extends "template.html" %}
+
+{%block title %}Registered!{% endblock %}
+
+{% block content %}
+	    	<h2 style='text-align:left'>Registered!</h2>
+	    	<div id='invitation_container' class="invitation">
+	    		
+	    		<!--Invitation-->
+	    		<div class='media well'>
+	    			
+	    			<div class='media-body'>
+		    			<h4 class='media-heading'>You are registered to volunteer with {{org}} !</h4>
+		    			
+
+		    			<a href="/matches">
+			    			<button type='button' class='btn btn-default'>
+			    				<span style='font-size:2em' class='glyphicon glyphicon-envelope'></span>
+			    				</br>Invite More Friends
+			    			</button>
+			    		</a>
+			    		<a href="/opportunities">
+			    			<button type='button' class='btn btn-default'>
+			    				<span style='font-size:2em' class='glyphicon glyphicon-arrow-left'></span>
+			    				</br>Back to opportunities
+			    			</button>
+			    		</a>
+
+		    			
+		    		</div>
+		    	</div>
+
+	    	</div><!--Invitation container-->
+{% endblock %}
+	   
