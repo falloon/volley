@@ -96,7 +96,7 @@ $app->get('/organizations/{name}', function($name) use($app) {
 });
 
 $app->get('/submitted/{name}', function($name) use($app) {
-  return $app['twig']->render('organizations.html', array(
+  return $app['twig']->render('submitted.html', array(
       'name' => $name,
     ));
 });
