@@ -95,15 +95,15 @@ $app->get('/organizations/{name}', function($name) use($app) {
     ));
 });
 
-$app->get('/submitted/{org}', function($org) use($app) {
+$app->get('/submitted/{name}', function($name) use($app) {
   return $app['twig']->render('organizations.html', array(
-      'org' => $org,
+      'name' => $name,
     ));
 });
 
-$app->get('/times2/{org}', function($org) use($app) {
+$app->get('/times2/{name}', function($name) use($app) {
   return $app['twig']->render('times2.html', array(
-      'org' => $org,
+      'name' => $name,
     ));
 });
 
